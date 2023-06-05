@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="images/ming.png" type="image/png" />
 
     <title>Masaka Town Church</title>
@@ -28,7 +31,7 @@
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-secondary">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">Seventh-day Adventist Church <br> MASAKA TOWN</a>
+            <a href="#" class="navbar-brand">Seventh-day Adventist Church<br><span>MASAKA TOWN</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,8 +48,8 @@
                         <a href="#calendar" class="nav-link">Calendar</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="ministryDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Ministries</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="ministryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Ministries</a>
                         <ul class="dropdown-menu" aria-labelledby="ministryDropdown">
                             <li><a class="dropdown-item" href="#children">Children Ministry</a></li>
                             <li><a class="dropdown-item" href="#youth">Youth Ministry</a></li>
@@ -69,6 +72,22 @@
         </div>
     </nav>
 
+    <main class="main-content">
+        <!-- Images of the new church -->
+        <div class="owl-carousel">
+            <div class="item">
+                <img src="images/FRONT.jpg" alt="Image 1">
+            </div>
+            <div class="item">
+                <img src="images/FRONT-RIGHT.jpg" alt="Image 2">
+            </div>
+            <div class="item">
+                <img src="images/FRONT-LEFT.jpg" alt="Image 3">
+            </div>
+        </div>
+    </main>
+
+
     <!-- Mission Statement -->
 
     <!-- About in brief -->
@@ -83,15 +102,10 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('.navbar').addClass('scrolled');
-            } else {
-                $('.navbar').removeClass('scrolled');
-            }
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -145,17 +145,29 @@ nav {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  font-weight: bold;
+  color: #158488;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand span {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #218cea;
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
+  color: #555;
 }
 
 .navbar-nav {
@@ -261,6 +273,16 @@ nav {
   }
 }
 
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .navbar-brand span {
+    font-size: 14px;
+  }
+}
+
 .navbar-dark .navbar-brand {
   color: #fff;
 }
@@ -329,4 +351,55 @@ nav {
   width: 100%;
   height: 2px;
   background-color: #058383;
+}
+
+.main-content {
+  margin-top: 96px;
+  margin-right: calc(100vw / 7);
+}
+/* carousel elements */
+.owl-carousel {
+  margin-top: 96px;
+  margin-bottom: 30px;
+  /* margin-right: calc(100vw / 7); */
+}
+
+.owl-carousel .item {
+  text-align: center;
+  padding: 0;
+}
+
+.owl-carousel .item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.owl-carousel .owl-nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 30px;
+  font-size: 14px;
+  color: #333;
+  opacity: 0.8;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .owl-carousel .item {
+    padding: 0;
+  }
 }
