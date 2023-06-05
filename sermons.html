@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Masaka Town Church. Join us for great worship, music, and and more educative activities.">
+    <meta name="description"
+        content="Welcome to Masaka Town Church. Join us for great worship, music, and and more educative activities.">
     <meta name="keywords" content="Masaka Town Church">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" href="images/ming.png" type="image/png" />
 
@@ -28,7 +29,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-secondary">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">Seventh-day Adventist Church <br> MASAKA TOWN</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,18 +45,18 @@
                         <a href="#calendar" class="nav-link">Calendar</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="ministries.html" id="dropdown04"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ministries</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="#children">Children Ministry</a>
-                            <a class="dropdown-item" href="#youth">Youth Ministry</a>
-                            <a class="dropdown-item" href="#women">Women Ministry</a>
-                            <a class="dropdown-item" href="#men">Men Ministry</a>
-                            <a class="dropdown-item" href="#music">Music Ministry</a>
-                            <a class="dropdown-item" href="#sabbath_sch">Sabbath School</a>
-                            <a class="dropdown-item" href="#pm">Personal Ministries</a>
-                            <a class="dropdown-item" href="#prayer">Prayer Ministry</a>
-                        </div>
+                        <a class="nav-link dropdown-toggle" href="#" id="ministryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Ministries</a>
+                        <ul class="dropdown-menu" aria-labelledby="ministryDropdown">
+                            <li><a class="dropdown-item" href="#children">Children Ministry</a></li>
+                            <li><a class="dropdown-item" href="#youth">Youth Ministry</a></li>
+                            <li><a class="dropdown-item" href="#women">Women Ministry</a></li>
+                            <li><a class="dropdown-item" href="#men">Men Ministry</a></li>
+                            <li><a class="dropdown-item" href="#music">Music Ministry</a></li>
+                            <li><a class="dropdown-item" href="#sabbath_sch">Sabbath School</a></li>
+                            <li><a class="dropdown-item" href="#pm">Personal Ministries</a></li>
+                            <li><a class="dropdown-item" href="#prayer">Prayer Ministry</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a href="#media" class="nav-link">Media</a>
@@ -79,8 +80,9 @@
     <!-- footer section -->
 
     <!-- Scripts -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         $(window).scroll(function () {
             if ($(this).scrollTop() > 50) {
