@@ -1,10 +1,10 @@
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 50) {
-    $('.navbar').addClass('scrolled');
-  } else {
-    $('.navbar').removeClass('scrolled');
-  }
-});
+// $(window).scroll(function () {
+//   if ($(this).scrollTop() > 50) {
+//     $('.navbar').addClass('scrolled');
+//   } else {
+//     $('.navbar').removeClass('scrolled');
+//   }
+// });
 
 // Initialize Owl Carousel
 $(document).ready(function () {
@@ -31,5 +31,36 @@ $(document).ready(function () {
         items: 1,
       },
     },
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    const aboutSection = document.querySelector('#about');
+    const aboutSectionHeight = aboutSection.offsetHeight;
+    const navbarHeight = navbar.offsetHeight;
+    const scrollPosition = window.pageYOffset;
+
+    if (scrollPosition >= aboutSection.offsetTop - navbarHeight) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('scroll', function () {
+    const sidebar = document.querySelector('.sidebar');
+    const aboutSection = document.querySelector('#about');
+    const aboutSectionOffsetTop = aboutSection.offsetTop;
+    const scrollPosition = window.pageYOffset;
+
+    if (scrollPosition >= aboutSectionOffsetTop) {
+      sidebar.classList.add('scrolled');
+    } else {
+      sidebar.classList.remove('scrolled');
+    }
   });
 });
