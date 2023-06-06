@@ -26,7 +26,7 @@ nav {
   width: calc(100vw / 7);
   background-color: #36747d;
   height: 100vh;
-  transition: background-color 0.6s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .logo,
@@ -385,6 +385,10 @@ nav {
   color: #fff;
 }
 
+.navbar.scrolled .navbar-brand span {
+  color: #1ec2e7;
+}
+
 .navbar.scrolled .navbar-brand:hover,
 .navbar.scrolled .nav-link:hover {
   color: #f8c291;
@@ -413,7 +417,7 @@ nav {
 }
 
 .owl-carousel .owl-nav {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   text-align: center;
 }
 
@@ -441,16 +445,67 @@ nav {
   }
 }
 
+/* mission section */
+#mission {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+}
+
+.mission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-statement {
+  max-width: 800px;
+  text-align: center;
+}
+
+.mission-section-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mission-text {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.verse-ref {
+  font-style: italic;
+  color: #000;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #36747d;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #031a1d;
+}
+
 /* about section */
 #about {
-  margin-right: 5px;
-  margin-left: 10px;
   background-color: #f8f8f8;
+  padding: 10px;
 }
 
 .about-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .about-image {
@@ -460,8 +515,9 @@ nav {
 }
 
 .about-image img {
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%; */
+  width: 510px;
+  height: 400px;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -471,7 +527,7 @@ nav {
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
@@ -520,7 +576,6 @@ nav {
   display: block;
   margin-bottom: 8px;
 }
-
 
 .section-text strong {
   font-weight: bold;

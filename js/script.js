@@ -13,10 +13,10 @@ $(document).ready(function () {
     loop: true,
     margin: 20,
     nav: true,
-    navText: [
-      '<i class="fas fa-chevron-left"></i>',
-      '<i class="fas fa-chevron-right"></i>',
-    ],
+    // navText: [
+    //   '<i class="fas fa-chevron-left"></i>',
+    //   '<i class="fas fa-chevron-right"></i>',
+    // ],
     dots: false,
     autoplay: true,
     autoplayTimeout: 5000,
@@ -37,7 +37,7 @@ $(document).ready(function () {
 document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
-    const aboutSection = document.querySelector('#about');
+    const aboutSection = document.querySelector('#mission');
     const aboutSectionHeight = aboutSection.offsetHeight;
     const navbarHeight = navbar.offsetHeight;
     const scrollPosition = window.pageYOffset;
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', function () {
     const sidebar = document.querySelector('.sidebar');
-    const aboutSection = document.querySelector('#about');
+    const aboutSection = document.querySelector('#mission');
     const aboutSectionOffsetTop = aboutSection.offsetTop;
     const scrollPosition = window.pageYOffset;
 
